@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="us-ascii"><!--Don't forget to fill these out!-->
+	<title>GVEC | Scaliatine Design</title>
+	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" /><!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers--><script src="js/modernizr.js"></script><!-- jQuery library (from jQuery Library) -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!-- bxSlider Javascript file --><script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices --><meta name="viewport" content="width=device-width, initial-scale=1"/><!-- Google Fonts Code -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a></div>
+<!----------- START MOBILE NAVIGATION ------- >        
+       <!-- this is the link you click to get the menu to show up-->
+
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button" src="images/burger.png" /></a></nav>
+<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+<nav class="dropdown" id="mobilemenu">
+<header>
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="navigation close" src="images/close.png" /></a></nav>
+</header>
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li class="activelink"><a href="index.html#portfolio">Work</a></li>
+	<li><a href="resume.html">Resume</a></li>
+	<li><a href="mailto:scaliatine@gmail.com">Contact</a></li>
+</ul>
+</nav>
+<!----------- END MOBILE NAVIGATION -----------></header>
+
+<div class="clear"></div>
+<!----------- HERO  -----------><!--------- PORTFOLIO ------------>
+
+<section id="individual">
+<div class="title">
+<h2>Guadalupe Valley Electric Cooperative</h2>
+</div>
+
+<article class="description">
+<h3>Watts the Deal</h3>
+
+<p>GVEC is a cooperative with two sides: membership in the not-for-profit electric portion of their business which features exclusive member benefits, and additional services beyond the meter extended to both members and the general public. Their goal is to be more than just a power company.</p>
+</article>
+
+<article class="description">
+<h3>Taking the Steps</h3>
+
+<h4>Goal</h4>
+
+<p>The goal is to redesign the electric bill served to over 40,000 electric cooperative members and redesign the cooperative&#39;s website which features many of the services they offer.</p>
+
+<h4>Questions</h4>
+
+<ul class="goals">
+	<li>How might we increase transparency for how members are being charged?</li>
+	<li>How might we encourage members to participate in the other services provided?</li>
+	<li>How can we show the impact within the community GVEC makes?</li>
+</ul>
+
+<h4>Previous Designs</h4>
+<img alt="gvec old electric bill" class="columnprojectimages" src="images/gvec_oldbill.jpg" /> <img alt="gvec old website" class="columnprojectimages" src="images/gvecoldsite.png" /></article>
+
+<div class="clear"></div>
+
+<article class="description">
+<h3>Lighting the Way</h3>
+
+<h4>Final Outcome</h4>
+
+<p>A responsive website, with a clear voice, showcases the multitude of services GVEC offers its members, allowing for quick access to their needs. This proposal site was introduced in the early stages of a complete redesign and eventually changed beyond this concept.</p>
+<img alt="Newly designed gvec website shownd desktop computer" src="images/gveccomputer.png" />
+<div class="clear"></div>
+
+<div class="button"><a href="http://www.scaliatine.com/gvec" target="_blank">Visit Site</a></div>
+
+<div class="clear"></div>
+
+<h4>Break the Bill</h4>
+
+<p>Along with the website redesign, a new bill was created to create transparency for the charges and electricty usage.</p>
+<img alt="gvec bill with graphs and color" src="images/gvec_newbill.jpg" /></article>
+</section>
+
+<footer>
+<div class="contactinfo">
+<p>&copy; David Scaliatine, 2018 | <a href="mailto:scaliatine@gmail.com">Email Me</a></p>
+</div>
+
+<nav class="desktoponly">
+<ul class="footernav">
+	<li><a href="schertz.html">Schertz</a></li>
+	<li><a href="wino.html">Wino</a></li>
+	<li><a href="hermes.html">Hermes</a></li>
+	<li><a href="coined.html">Coined</a></li>
+	<li><a href="bauhaus.html">Bauhaus</a></li>
+	<li><a class="footeractive" href="gvec.html">GVEC</a></li>
+	<li><a href="reslife.html">Reslife</a></li>
+	<li><a href="alumni.html">Alumni</a></li>
+</ul>
+</nav>
+</footer>
+   <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+    </script>
+
+</body>
+</html>

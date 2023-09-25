@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="us-ascii"><!--Don't forget to fill these out!-->
+	<title>Reslife | Scaliatine Design</title>
+	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" /><!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers--><script src="js/modernizr.js"></script><!-- jQuery library (from jQuery Library) -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!-- bxSlider Javascript file --><script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices --><meta name="viewport" content="width=device-width, initial-scale=1"/><!-- Google Fonts Code -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a></div>
+<!----------- START MOBILE NAVIGATION ------- >        
+       <!-- this is the link you click to get the menu to show up-->
+
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button" src="images/burger.png" /></a></nav>
+<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+<nav class="dropdown" id="mobilemenu">
+<header>
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="navigation close" src="images/close.png" /></a></nav>
+</header>
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li class="activelink"><a href="index.html#portfolio">Work</a></li>
+	<li><a href="resume.html">Resume</a></li>
+	<li><a href="mailto:scaliatine@gmail.com">Contact</a></li>
+</ul>
+</nav>
+<!----------- END MOBILE NAVIGATION -----------></header>
+
+<div class="clear"></div>
+<!----------- HERO  -----------><!--------- PORTFOLIO ------------>
+
+<section id="individual">
+<div class="title">
+<h2>Texas State Housing and Residential Life</h2>
+</div>
+
+<article class="description">
+<h3>Keys to Success</h3>
+
+<p>The Department of Housing and Residential Life at Texas State (DHRL) provides welcoming inclusive living communities for a diverse student population to foster academic success, campus engagement, and personal development.</p>
+</article>
+
+<article class="description">
+<h3>Unpacking the Details</h3>
+
+<p>When Texas State University went through a website redesign, it was the perfect opportunity for DHRL to completely reapproach their website User Experience. At the time there were multiple pages with duplicate content, pages that required manual updates at a very frequent rate and an unclear user flow.</p>
+
+<h4>Questions</h4>
+
+<ul class="goals">
+	<li>How might we introduce the housing process to parents?</li>
+	<li>How might we cater to different demographics?</li>
+	<li>How might we plan an experience for visitors?</li>
+	<li>How might we display content that doesn&#39;t require constant updating?</li>
+</ul>
+
+<h4>Mapping the Path</h4>
+
+<p>Part of the design process was to take a complete inventory of all the different web pages within the structure of the site. Then all the copy was assessed and rewritten with a clear tone of voice. This process reduced the page count by 25%.</p>
+
+<h4>Previous Design</h4>
+<img alt="mobile device with wireframes of schertz website" class="columnprojectimages" src="images/reslife_website1.jpg" /> <img alt="mobile device with wireframes of schertz website" class="columnprojectimages" src="images/reslife_website2.jpg" /> <img alt="mobile device with wireframes of schertz website" class="columnprojectimages" src="images/reslife_website3.jpg" /></article>
+
+<div class="clear"></div>
+
+<article class="description">
+<h3>You&rsquo;re Home</h3>
+
+<h4>Final Outcome</h4>
+
+<p>Along with a completely updated sitemap, content on the pages was updated to showcase and aggregate vital information to reduce pages with just lists of links.</p>
+<img alt="homepage" src="images/reslife_website4.jpg" /> <img alt="housing options" src="images/reslife_website5.jpg" /> <img alt="getting started" src="images/reslife_website6.jpg" /></article>
+</section>
+
+<footer>
+<div class="contactinfo">
+<p>&copy; David Scaliatine, 2018 | <a href="mailto:scaliatine@gmail.com">Email Me</a>&nbsp;</p>
+</div>
+
+<nav class="desktoponly">
+<ul class="footernav">
+	<li><a href="schertz.html">Schertz</a></li>
+	<li><a href="wino.html">Wino</a></li>
+	<li><a href="hermes.html">Hermes</a></li>
+	<li><a href="coined.html">Coined</a></li>
+	<li><a href="bauhaus.html">Bauhaus</a></li>
+	<li><a href="gvec.html">GVEC</a></li>
+	<li><a class="footeractive" href="reslife.html">Reslife</a></li>
+	<li><a href="alumni.html">Alumni</a></li>
+</ul>
+</nav>
+</footer>
+   <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><!--Don't forget to fill these out!-->
+	<title>Bauhaus | Scaliatine Design</title>
+	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" /><!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers--><script src="js/modernizr.js"></script><!-- jQuery library (from jQuery Library) -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!-- bxSlider Javascript file --><script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices --><meta name="viewport" content="width=device-width, initial-scale=1"/><!-- Google Fonts Code -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a></div>
+<!----------- START MOBILE NAVIGATION ------- >        
+       <!-- this is the link you click to get the menu to show up-->
+
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button" src="images/burger.png" /></a></nav>
+<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+<nav class="dropdown" id="mobilemenu">
+<header>
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="navigation close" src="images/close.png" /></a></nav>
+</header>
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li class="activelink"><a href="index.html#portfolio">Work</a></li>
+	<li><a href="resume.html">Resume</a></li>
+	<li><a href="mailto:scaliatine@gmail.com">Contact</a></li>
+</ul>
+</nav>
+<!----------- END MOBILE NAVIGATION -----------></header>
+
+<div class="clear"></div>
+<!----------- HERO  -----------><!--------- PORTFOLIO ------------>
+
+<section id="individual">
+<div class="title">
+<h2>We A.R.e Bauhaus</h2>
+</div>
+
+<article class="description">
+<h3>Form</h3>
+
+<p>Designers connected to the Bauhaus celebrated the ordinary that may have been previously ignored. In celebration of the Bauhaus 100 year anniversary, the exhibit would consist of large letters, visible only through using the Microsoft HoloLens, on the walls in the Bauhaus Master Houses in Dessau representing each designer using Augmented Reality.</p>
+</article>
+
+<article class="description">
+<h3>Follows</h3>
+
+<p>We ARe Bauhaus will turn what is considered ordinary into a focal point&mdash;much like the artists in the exhibit.</p>
+
+<h4>Featured Artists</h4>
+
+<p>Saul Bass | Wim Crowell</p>
+
+<h4>Marketing Collateral</h4>
+
+<p>A set of transparent posters were developed to advertise the exhibit, placed inside train stations, stores and local centers.</p>
+<img alt="clear poster with We ARE Bauhaus slogan, placed on a red background" class="columnprojectimages" src="images/wear.jpg" /> <img alt="mobile device with wireframes of schertz website" class="columnprojectimages" src="images/wear2.jpg" /></article>
+
+<div class="clear"></div>
+
+<article class="description">
+<h3>Function</h3>
+
+<h4>Final Outcome</h4>
+<!-- Attaches the script to the UL --><script type="text/javascript">
+			$(document).ready(function(){
+			$('.bxslider').bxSlider({
+                auto: true,
+                pager: true,
+                pause: 10000,
+                controls: false
+            });
+			});
+			</script>
+
+<div id="outcomes">
+<ul class="bxslider">
+	<li><img src="images/wearehouse1.jpg" /></li>
+	<li><img src="images/wearehouse2.jpg" /></li>
+	<li><img src="images/wearehouse3.jpg" /></li>
+	<li><img src="images/wearhouse4.jpg" /></li>
+	<li><img src="images/wearhouse5.jpg" /></li>
+	<li><img src="images/wearhouse6.jpg" /></li>
+</ul>
+</div>
+</article>
+</section>
+
+<footer>
+<div class="contactinfo">
+<p>&copy; David Scaliatine, 2018 | <a href="mailto:scaliatine@gmail.com">Email Me</a>&nbsp;</p>
+</div>
+
+<nav class="desktoponly">
+<ul class="footernav">
+	<li><a href="schertz.html">Schertz</a></li>
+	<li><a href="wino.html">Wino</a></li>
+	<li><a href="hermes.html">Hermes</a></li>
+	<li><a href="coined.html">Coined</a></li>
+	<li><a class="footeractive" href="bauhaus.html">Bauhaus</a></li>
+	<li><a href="gvec.html">GVEC</a></li>
+	<li><a href="reslife.html">Reslife</a></li>
+	<li><a href="alumni.html">Alumni</a></li>
+</ul>
+</nav>
+</footer>
+   <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+    </script>
+
+</body>
+</html>

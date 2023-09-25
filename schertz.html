@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><!--Don't forget to fill these out!-->
+	<title>Schertz | Scaliatine Design</title>
+	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" /><!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers--><script src="js/modernizr.js"></script><!-- jQuery library (from jQuery Library) -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</script><!-- bxSlider Javascript file --><script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices --><meta name="viewport" content="width=device-width, initial-scale=1"/><!-- Google Fonts Code -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a></div>
+<!----------- START MOBILE NAVIGATION ------- >        
+       <!-- this is the link you click to get the menu to show up-->
+
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button" src="images/burger.png" /></a></nav>
+<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+<nav class="dropdown" id="mobilemenu">
+<header>
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="navigation close" src="images/close.png" /></a></nav>
+</header>
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li class="activelink"><a href="index.html#portfolio">Work</a></li>
+	<li><a href="resume.html">Resume</a></li>
+	<li><a href="mailto:scaliatine@gmail.com">Contact</a></li>
+</ul>
+</nav>
+<!----------- END MOBILE NAVIGATION -----------></header>
+
+<div class="clear"></div>
+<!----------- HERO  -----------><!--------- PORTFOLIO ------------>
+
+<section id="individual">
+<div class="title">
+<h2>City of Schertz Website</h2>
+</div>
+
+<article class="description">
+<h3>Finding a Fit</h3>
+
+<p>Schertz, founded in 1843, is located northeast of San Antonio and is nationally recognized for its family atmosphere, foresight and innovation, and commitment to workplace opportunities. However, their tourism site was lacking the excitement and innovation for which Schertz is known.</p>
+<img alt="visit schertz website in a chrome browser" class="columnprojectimages" src="images/schertzold.png" /> <img alt="visit schertz website showing events in a chrome browser" class="columnprojectimages" src="images/schertzold2.png" /></article>
+
+<article class="description">
+<h3>Sew Be It</h3>
+
+<p>Utilizing The Sprint method, a five-day process that helps solve design problems quickly by determining the problem, answering critical questions, protoyping and testing ideas with final users, a clear path was identified resulting in the final outcome.</p>
+
+<h4>Goals</h4>
+
+<p>The goal was identified to increase the number of visitors, entice new residents and attract prospective businesses by being the go-to-guide for local culture and events.</p>
+
+<h4>Questions</h4>
+
+<ul class="goals">
+	<li>How might we use events to encourage residency?</li>
+	<li>How might we cater to different demographics?</li>
+	<li>How might we plan an experience for visitors?</li>
+</ul>
+
+<h4>Sketches</h4>
+
+<p>With mobile-first in mind, sketches were created and then user tested, helping create the final layout to move into wireframing.</p>
+<img alt="sketch of website on phones" src="images/schertz_sketchphones.jpg" />
+<h4>Wireframes</h4>
+
+<p>Unbranded and then fully-branded wireframes were tested to determine the success of both the UX/UI of the responsive site.</p>
+<img alt="mobile device with wireframes of schertz website" class="projectimages" src="images/schertz_wireframe1.png" /> <img alt="mobile device with wireframes of schertz website" class="projectimages" src="images/schertz_wireframe4.png" /> <img alt="mobile device with wireframes of schertz website" class="projectimages" src="images/schertz_wireframe2.png" /> <img alt="mobile device with wireframes of schertz website" class="projectimages" src="images/schertz_wireframe3.png" /></article>
+
+<div class="clear"></div>
+
+<article class="description">
+<h3>Try It On</h3>
+
+<h4>Final Outcome</h4>
+
+<p>A responsive website, with a clear voice, showcases the many events that the City of Schertz has to offer&mdash;allowing residents and visitors alike to sort and search by what interests them.</p>
+<img alt="Newly designed schertz website shown on a mobile device and desktop computer" src="images/schertzwebsite.jpg" />
+<div class="button"><a href="http://www.scaliatine.com/schertz" target="_blank">Visit Site</a></div>
+</article>
+</section>
+
+<footer>
+<div class="contactinfo">
+<p>&copy; David Scaliatine, 2018 | <a href="mailto:scaliatine@gmail.com">Email Me</a>&nbsp;</p>
+</div>
+
+<nav class="desktoponly">
+<ul class="footernav">
+	<li><a class="footeractive" href="schertz.html">Schertz</a></li>
+	<li><a href="wino.html">Wino</a></li>
+	<li><a href="hermes.html">Hermes</a></li>
+	<li><a href="coined.html">Coined</a></li>
+	<li><a href="bauhaus.html">Bauhaus</a></li>
+	<li><a href="gvec.html">GVEC</a></li>
+	<li><a href="reslife.html">Reslife</a></li>
+	<li><a href="alumni.html">Alumni</a></li>
+</ul>
+</nav>
+</footer>
+   <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+    </script>
+
+</body>
+</html>

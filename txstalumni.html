@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="us-ascii"><!--Don't forget to fill these out!-->
+	<title>Scaliatine Design</title>
+	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" /><!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers--><script src="js/modernizr.js"></script><!-- jQuery library (served from Google) --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><!-- bxSlider Javascript file --><script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices --><meta name="viewport" content="width=device-width, initial-scale=1"/><!-- Google Fonts Code -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div class="logo"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></div>
+<!----------- START MOBILE NAVIGATION ------- >        
+       <!-- this is the link you click to get the menu to show up-->
+
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button" src="images/burger.png" /></a></nav>
+<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+<nav class="dropdown" id="mobilemenu">
+<header>
+<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="navigation close" src="images/close.png" /></a></nav>
+</header>
+
+<ul>
+	<li class="activelink"><a href="#">Home</a></li>
+	<li><a href="#">Work</a></li>
+	<li><a href="#">Writing</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<!----------- END MOBILE NAVIGATION -----------></header>
+<!----------- HERO  -----------><!--------- PORTFOLIO ------------>
+
+<section id="individual">
+<div class="title">
+<h2>City of Schertz Website</h2>
+</div>
+
+<article class="description">
+<h3>Finding a Fit</h3>
+
+<p>Schertz, founded in 1843, is located northeast of San Antonio and is nationally recognized for its family atmosphere, foresight and innovation, and commitment to workplace opportunities. However, their tourism site was lacking the excitement and innovation for which Schertz is known.</p>
+</article>
+
+<article class="description">
+<h3>Sew Be It</h3>
+
+<p>Utilizing The Sprint method, a five-day process that helps solve design proglems quickly by determining the proglem, answering critical questions, protoyping and testing ideas with final users, a clear path was identified resulting in the final outcome.</p>
+
+<h4>Goals</h4>
+
+<p>To create a responsive websute for a town along the I35 corridor to attract new visitors, businesses and keep residents connected to the larger community.</p>
+
+<h4>Questions</h4>
+</article>
+
+<article class="description">
+<h3>Try It On</h3>
+
+<div class="codepenpreview">
+<p class="codepen" data-default-tab="result" data-embed-version="2" data-height="600" data-pen-title="Bobcat Pride Email" data-slug-hash="ELWwqR" data-theme-id="33328" data-user="scaliatine">See the Pen <a href="https://codepen.io/scaliatine/pen/ELWwqR/">Bobcat Pride Email</a> by David Scaliatine (<a href="https://codepen.io/scaliatine">@scaliatine</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+</div>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script></article>
+
+<footer>
+<p>&copy; David Scaliatine, 2018 | <a href="mailto:scaliatine@gmail.com">Email Me</a></p>
+</footer>
+</section>
+<!---- JAVA SCRIPT -----><!-- Place this script at the end of your body --><script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script></div>
+</body>
+</html>

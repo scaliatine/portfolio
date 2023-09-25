@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"><!--Don't forget to fill these out!-->
+	<title>Alumni | Scaliatine Design</title>
+	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+	<script src="js/modernizr.js"></script> <!-- jQuery library (from jQuery Library) -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+	<!-- bxSlider Javascript file -->
+	<script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Google Fonts Code -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a>
+			</div>
+			<!----------- START MOBILE NAVIGATION ------- >        
+       <!-- this is the link you click to get the menu to show up-->
+
+			<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button"
+						src="images/burger.png" /></a></nav>
+			<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+			<nav class="dropdown" id="mobilemenu">
+				<header>
+					<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img
+								alt="navigation close" src="images/close.png" /></a></nav>
+				</header>
+
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="activelink"><a href="index.html#portfolio">Work</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="mailto:scaliatine@gmail.com">Contact</a></li>
+				</ul>
+			</nav>
+			<!----------- END MOBILE NAVIGATION ----------->
+		</header>
+
+		<div class="clear"></div>
+		<!----------- HERO  -----------><!--------- PORTFOLIO ------------>
+
+		<section id="individual">
+			<div class="title">
+				<h2>Texas State Alumni Association</h2>
+			</div>
+
+			<article class="description">
+				<h3>Bobcat Battle Cry</h3>
+
+				<p>The Texas State Alumni Association&#39;s mission is to create a community of alumni, students and
+					friends with a commitment to invest in the future of our University. With over 184,000 alumni and
+					over 50% under the age of 40, one of the most effective ways to communicate with the Bobcats is
+					through email.</p>
+
+				<center><img class="projectimages" src="images/bobcat_logo.png" /></center>
+			</article>
+
+			<article class="description">
+				<h3>Taking the Steps</h3>
+
+				<p>One of the tasks was to completely update the email templates that were being utilized, focusing on a
+					mobile friendly, digestable layout.</p>
+
+				<h4>Questions</h4>
+
+				<ul class="goals">
+					<li>How might we increase attendance to events?</li>
+					<li>How might we encourage alumni to join the alumni association?</li>
+					<li>How might we showcase the impact the alumni association makes within the community?</li>
+					<li>How might we unite multiple generations of alumni to one identity?</li>
+				</ul>
+
+				<h4>Previous Designs</h4>
+				<img alt="email beginning for alumni templates" class="columnprojectimages"
+					src="images/alumniemail3.png" /> <img alt="email beginning for alumni templates"
+					class="columnprojectimages" src="images/alumniemail2.png" /> <img
+					alt="email beginning for alumni templates" class="columnprojectimages"
+					src="images/alumniemail1.png" /> <img alt="email beginning for alumni templates"
+					class="columnprojectimages" src="images/alumniemail4.png" />
+			</article>
+
+			<div class="clear"></div>
+
+			<article class="description">
+				<h3>Walking the Stage</h3>
+
+				<h4>Final Outcome</h4>
+
+				<p>Completely new templates were implemented for events, newsletters and member solicitation with a
+					mobile-first design philosophy&mdash;resulting in an increase of opens and clicks within the emails.
+					Additionally, a new icon was introduced to bridge the gap between the &quot;old and new&quot; of the
+					universities history.</p>
+				<!-- Attaches the script to the UL -->
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$('.bxslider').bxSlider({
+							auto: false,
+							pager: true,
+							pause: 10000,
+							controls: true
+						});
+					});
+				</script>
+
+				<div id="outcomes">
+					<ul class="bxslider">
+						<li>
+							<div class="codepenpreview">
+								<p class="codepen" data-default-tab="result" data-embed-version="2" data-height="600"
+									data-pen-title="Bobcat Pride Email" data-slug-hash="ELWwqR" data-theme-id="33328"
+									data-user="scaliatine">See the Pen <a
+										href="https://codepen.io/scaliatine/pen/ELWwqR/">Bobcat Pride Email</a> by David
+									Scaliatine (<a href="https://codepen.io/scaliatine">@scaliatine</a>) on <a
+										href="https://codepen.io">CodePen</a>.</p>
+							</div>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+						</li>
+						<li>
+							<p class="codepen" data-default-tab="result" data-embed-version="2" data-height="600"
+								data-pen-title="Alumni Newsletter" data-slug-hash="pVedow" data-theme-id="33328"
+								data-user="scaliatine">See the Pen <a
+									href="https://codepen.io/scaliatine/pen/pVedow/">Alumni Newsletter</a> by David
+								Scaliatine (<a href="https://codepen.io/scaliatine">@scaliatine</a>) on <a
+									href="https://codepen.io">CodePen</a>.</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+						</li>
+						<li>
+							<p class="codepen" data-default-tab="result" data-embed-version="2" data-height="600"
+								data-pen-title="Alumni Events" data-slug-hash="YLZEzo" data-theme-id="33328"
+								data-user="scaliatine">See the Pen <a
+									href="https://codepen.io/scaliatine/pen/YLZEzo/">Alumni Events</a> by David
+								Scaliatine (<a href="https://codepen.io/scaliatine">@scaliatine</a>) on <a
+									href="https://codepen.io">CodePen</a>.</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button"><a href="https://codepen.io/collection/DQpqPP/" target="_blank">View on
+						Codepen.io</a></div>
+			</article>
+		</section>
+
+		<footer>
+			<div class="contactinfo">
+				<p>&copy; David Scaliatine, 2018 | <a href="mailto:scaliatine@gmail.com">Email Me</a>&nbsp;</p>
+			</div>
+
+			<nav class="desktoponly">
+				<ul class="footernav">
+					<li><a href="schertz.html">Schertz</a></li>
+					<li><a href="wino.html">Wino</a></li>
+					<li><a href="hermes.html">Hermes</a></li>
+					<li><a href="coined.html">Coined</a></li>
+					<li><a href="bauhaus.html">Bauhaus</a></li>
+					<li><a href="gvec.html">GVEC</a></li>
+					<li><a href="reslife.html">Reslife</a></li>
+					<li><a class="footeractive" href="alumni.html">Alumni</a></li>
+				</ul>
+			</nav>
+		</footer>
+		   <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+    </script>
+
+</body>
+
+</html>

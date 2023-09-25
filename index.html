@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="us-ascii"><!--Don't forget to fill these out!-->
+    <title>Scaliatine Design</title>
+    <meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+    <script src="js/modernizr.js"></script>
+    
+    <!-- jQuery library (from jQuery Library) -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider.min.js"></script>
+    
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+    
+    <!--Makes the site so it won't scale down on small devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Google Fonts Code -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!--GOOGLE ANALYTICS-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36669572-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-36669572-1');
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a>
+            </div>
+              
+        <!-- this is the link you click to get the menu to show up-->
+
+            <nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button"
+                        src="images/burger.png" /></a></nav>
+            <!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+
+            <nav class="dropdown" id="mobilemenu">
+                <header>
+                    <nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img
+                                alt="navigation close" src="images/close.png" /></a></nav>
+                </header>
+
+                <ul>
+                    <li class="activelink"><a href="#">Home</a></li>
+                    <li><a href="index.html#portfolio">Work</a></li>
+                    <li><a href="resume.html">About Me</a></li>
+                </ul>
+            </nav>
+            <!----------- END MOBILE NAVIGATION ----------->
+        </header>
+        <!----------- HERO  ----------->
+
+        <div class="hero">
+            <div class="intro">
+                <p>Hi, I&rsquo;m <span class="bold">David.</span> I&rsquo;m a User Experience designer with a propensity
+                    for <span class="simplehighlight highlight">service design thinking,</span> puns, typography,
+                    delivering <span class="simplehighlight highlight">holistic user-centered experiences</span> and
+                    building collaborative teams.</p>
+            </div>
+        </div>
+        <!--------- PORTFOLIO ------------>
+
+        <div id="portfolio">
+            <div class="divider">
+                <h1>My Work</h1>
+            </div>
+
+            <div class="work">
+                <div class="workimage thesis"></div>
+
+                <div class="workcaption">
+                    <h2><a href="thesis.html">LGBTQ+ Storytelling</a></h2>
+
+                    <p><a href="thesis.html">Examing how personal narratives, shared from the LGBTQ+ community, impact
+                            self-esteem and how stories help create empathy. </a></p>
+                </div>
+
+                <div class="badge">
+                    <p><a href="thesis.html">Research</a></p>
+
+                    <p><a href="thesis.html">Thesis</a></p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="workimage frostfigma"></div>
+
+                <div class="workcaption">
+                    <h2><a href="frostbankfigma.html">Frost Bank Figma</a></h2>
+
+                    <p><a href="frostbankfigma.html">Restructuring Frost Bank&#39;s main design software to increase
+                            employee effeciencies and reduce the risk of duplicative work. </a></p>
+                </div>
+
+                <div class="badge">
+                    <p><a href="frostbankfigma.html">Information Architecture</a></p>
+
+                    <p><a href="frostbankfigma.html">Design Operations</a></p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="workimage frostredesign"></div>
+
+                <div class="workcaption">
+                    <h2><a class="inactive" href="frostbankredesign.html">Frost Bank Website Redesign</a></h2>
+
+                    <p><a class="inactive" href="frostbankredesign.html">Redesigning Frostbank.com to create a cohesive
+                            web experience that reflects the Frost brand voice and tone of a relationship driven
+                            organization.</a></p>
+                </div>
+
+                <div class="badge">
+                    <p><a class="inactive" href="frostbankredesign.html">UX/UI</a></p>
+
+                    <p><a class="inactive" href="frostbankredesign.html">Design Thinking</a></p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="workimage schertz"></div>
+
+                <div class="workcaption">
+                    <h2><a href="schertz.html">City of Schertz Tourism</a></h2>
+
+                    <p><a href="schertz.html">Redesigning the City of Schertz website to increase the number of visitors
+                            and entice new residents by being the go-to-guide for local culture and events</a></p>
+                </div>
+
+                <div class="badge">
+                    <p><a href="schertz.html">UX/UI</a></p>
+
+                    <p><a href="schertz.html">Conceptual Design</a></p>
+                </div>
+            </div>
+            <!--<a href="wino.html"><div class="work">
+            <div class="workimage wino"></div>
+            <div class="workcaption"><p>Wino Mobile App</p></div>
+           <div class="badge"><p>Interaction Design</p><p>Conceptual Design</p></div>
+            </div>
+        </a>--><!--<a href="hermes.html"><div class="work">
+            <div class="workimage hermes"></div>
+            <div class="workcaption"><p>Hermes Travel Website</p></div>
+            </div>
+        </a>--><!--<a href="coined.html"><div class="work">
+            <div class="workimage coined"></div>
+            <div class="workcaption"><p>Coined Video Game Blog</p></div>
+            </div>
+        </a>--><!--<a href="bauhaus.html"><div class="work">
+            <div class="workimage wear"></div>
+            <div class="workcaption"><p>We A.R.e Bauhaus</p></div>
+            <div class="badge"><p>Brand Strategy</p><p>Conceptual Design</p></div>
+            </div>
+        </a>--><!--<a href="gvec.html"><div class="work">
+            <div class="workimage gvec"></div>
+            <div class="workcaption"><p>Electric Cooperative</p></div>
+            <div class="badge"><p>UX/UI</p><p>Marketing Materials</p></div>
+            </div>
+        </a>-->
+
+            <div class="work">
+                <div class="workimage reslife"></div>
+
+                <div class="workcaption">
+                    <h2><a href="reslife.html">Texas State Housing Department</a></h2>
+
+                    <p><a href="reslife.html">Redesigning the Texas State Housing Department website to increase
+                            findability, reduce effort to update and reflect strategic campaigns.</a></p>
+                </div>
+
+                <div class="badge">
+                    <p><a href="reslife.html">Information Architecture</a></p>
+
+                    <p><a href="reslife.html">UX/UI</a></p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="workimage alumni"></div>
+
+                <div class="workcaption">
+                    <h2><a href="alumni.html">Texas State Alumni Association</a></h2>
+
+                    <p><a href="alumni.html">Create a strategic plan and brand campaign that helped raise over $40,000
+                            in funds for the Alumni Association Center</a></p>
+                </div>
+
+                <div class="badge">
+                    <p><a href="alumni.html">Brand Strategy</a></p>
+
+                    <p><a href="alumni.html">Marketing</a></p>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="workimage writings"></div>
+
+                <div class="workcaption">
+                    <h2><a href="http://medium.com/@scaliatine/" target="_blank">Writings on Medium.com</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contactinfo">
+            <p>&copy; David Scaliatine, 2022 | <a href="mailto:scaliatine@gmail.com">Email Me</a></p>
+        </div>
+    </footer>
+       <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+    </script>
+
+</body>
+
+</html>
