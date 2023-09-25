@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+@font-face {
+    font-family: 'ohm_trialbold';
+    src: url('ohmtrial-bold-webfont.woff2') format('woff2'),
+         url('ohmtrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size:12pt; /* Adjust for REM */
+	line-height: 1;
+}
+/* Structure */
+#wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+  max-width: 960px; /* 2 */
+ padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+ /*height: 100vh;*/
+padding-top: 1.5rem;
+}
+
+.hideme {
+   display: none;
+}
+
+.various {
+    display: none;
+}
+
+.cover {
+    position: absolute;
+    left:5%;
+    top: 6rem;
+    width: 70%;
+}
+
+#cover {}
+
+.word {
+    position: relative;
+    width: 80%;
+    padding-top: 60px;
+    left:5%;
+    /*display: none;*/
+}
+
+.definition {
+    width: 34em;
+    max-width: 90%;
+    position: relative;
+}
+
+cite {font-style: italic;}
+
+.printme {
+    width: 40%;
+    margin:0 auto;
+    top: 50px;
+    text-align: left;
+    position: relative;
+    display: block;
+    z-index: 100;
+}
+
+.cited{
+    width: 34em;
+    position: absolute;
+    bottom: 1rem;
+    left:5%;
+}
+
+.quote{
+    position: relative;
+    width: 55%;
+    float: left;
+    left:5%;
+    margin-top:2rem;
+    text-align: left;
+    hanging-punctuation: allow-end;
+
+}
+.story{
+    position: relative;
+    
+}
+
+
+/*---------text-----------*/
+p {
+	font-family: "Sole Sans Roman Roman Regular";
+	font-weight: normal;
+	font-style: normal;
+    font-size: 1.5rem;
+    line-height: 140%;
+    /*color:#f40038;*/
+    margin-bottom: .5rem;
+}
+
+p.pagination {
+    font-size:.80rem;
+    color: lightpink!important;
+    background: none !important;
+
+}
+
+.folio {
+     font-size:.80rem;
+    color: lightpink!important;
+    background: none !important;
+    position: absolute;
+    top: 0;
+    
+}
+
+.cover h1 {
+    font-size: 5rem;
+    color:#F40038;
+}
+
+h1 {font-family: "Vibro Regular",sans-serif;
+    font-size:4.3rem;
+    color:#f40038;
+    margin-bottom: 1rem;
+    letter-spacing: .1rem;
+  
+}
+
+
+
+h2 {
+    color: #2364AA;
+    font-family: "Sole Sans Roman Roman Regular";
+	font-weight: normal;
+	font-style: normal;
+    line-height: 145%;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-family: "Sole Sans Roman Roman Light";
+	font-weight: normal;
+	font-style: normal;
+    font-size: .75rem;
+    width: 34rem;
+    line-height: 140%;
+    color:#211103;
+}
+
+h5 {
+	font-family: "Sole Sans Roman Roman Light";
+	font-weight: normal;
+	font-style: normal;
+    font-size: 1rem;
+    line-height: 120%;
+    color:#7E1F86;
+}
+
+.word h1, .definition p {
+    color: rgb(234,147,171);
+}
+
+.cited p, .cited h1{font-size: 60%;
+    color:#9Da3A4;}
+
+/*--------Links-------------*/
+a:visited{color:lightgray;}
+a {
+    color: #211103;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*-------Media -------*/
+@media print {
+    body {
+        color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact;
+    }
+    .hideme {display: block;}
+    .printme {display: none;}
+
+}
+
