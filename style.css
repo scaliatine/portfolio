@@ -50,59 +50,45 @@ img {
 }
 
 html {
-    font-size:12pt; /* Adjust for REM */
+    font-size:16px; /* Adjust for REM */
 	line-height: 1;
+    font-family: 'IBM Plex Sans', sans-serif;
+
 }
 
 
 /* -------- DIVS ---------- */
 
-#wrapper {
-    background-color: white;
-    width: 100%;
-    max-width:1200px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    position: static;
-    
 
-    }
 
-/* menu ID that gets toggled on and off */
-#mobilemenu {
-	position:absolute;
-	width:100%;
-    height: 100vh;
-	background-color:#fff;
-	display:none; /* this line hides the div until the JavaScript is called to show it */
-    z-index: 1000;
-}
 
 
 .logo {
-    width: 20%;
-    float: left;
-    position: relative;
-    margin: 1rem 2% .2rem  2%;
+    width: 40%;
+
+}
+.topnav {
+    justify-content: space-around;
+    flex-grow: 0 !important;
 }
 
-.burger {
-    float:right;
-    margin: 5%;
+.intro p {
+    font-size:1.8rem;
+    line-height: 180%;
 }
 
-.hero {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    float:left;
-}
 
-#puns {
-    position: relative;
-    overflow: hidden;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 #projectnavs {display: none;}
 #projectnavs li{color:grey; font-size:.9rem !important;}
@@ -406,7 +392,6 @@ h4 {
 }
 
 
-
 .bold {
     font-weight:700;
 }
@@ -421,8 +406,6 @@ font-style: italic;}
 
 #individual .badge {
     width:100%;
-
-
 }
 
 .badge p {
@@ -455,17 +438,8 @@ font-size: .75rem !important;
     border-bottom-width:3px;
 }
 
-.bxslider li{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.8em;
-    font-weight:700;
-    line-height: 110%;
-    color: rgb(236,43,47);
-}
 
-ul.bxslider {
-    margin-top: .5rem;
-}
+
 
 
 
@@ -520,7 +494,7 @@ a {
     color:rgb(236,43,47);
     border-bottom-style: solid;
     /*border-bottom-width: 1px;*/
-    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .inactive {
@@ -590,7 +564,7 @@ a.nostyle:hover {
     color: rgb(236,43,47);
 }
 
-/* ----- MEDIA QUERIES ---- */
+/* ----- MEDIA QUERIES ----
 @media screen and (min-width:768px) {
     
     
@@ -644,7 +618,7 @@ a.nostyle:hover {
     /* margin: 0 auto; */
     }
     
-    .bxslider li {font-size: 3.5rem;}
+    /* .bxslider li {font-size: 3.5rem;}
     
     
     
@@ -703,10 +677,10 @@ a.nostyle:hover {
     width: 100%;
     height: 100%;
     border: 0;
-    }
-}
+    } */
+/* } */
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
 
 .work {
         float: left;
@@ -740,4 +714,4 @@ float:left;}
     margin-top:0;
     }
 
-}
+} */
