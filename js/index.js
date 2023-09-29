@@ -17,3 +17,11 @@ function highlight() {
         console.log(scroll);
     });
 }
+
+var current = new Date().getFullYear();
+var experience = current - 2011;
+
+
+console.log(current);
+console.log(experience);
+$(".experience").html(experience);
