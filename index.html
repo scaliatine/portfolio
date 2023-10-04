@@ -53,7 +53,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img class="logo" src="images/logo.svg"></a>
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.svg"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -65,13 +65,10 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Work</a>
+                                <a class="nav-link" href="index.html#work">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Research</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Me</a>
+                                <a class="nav-link" href="resume.html">About Me</a>
                             </li>
                         </ul>
                     </div>
@@ -90,15 +87,15 @@
 
 
     <!--------- PORTFOLIO Cards------------>
-    <div class="container">
+    <div class="container portfolio" id="work">
         <h1>My Projects</h1>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 gy-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-3 gy-5">
 
 
             <!-------PROJECT 1 ----------->
             <div class="col">
                 <a href="thesis.html">
-                    <div class="card h-100 projects">
+                    <div class="card h-100 projects ready">
                         <img src="https://miro.medium.com/v2/resize:fit:1400/1*pwEIDRo1DrVoxigtUHb9cQ.jpeg"
                             class="card-img-top" alt="...">
                         <div class="card-body">
@@ -126,6 +123,12 @@
             <div class="col">
                 <div class="card h-100 projects">
                     <img src="images/FigmaFive.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
+
+
                     <div class="card-body">
                         <h5 class="card-title">Skills to Pay the Bills</h5>
                         <p class="card-text">Overhauling Frost Bank's UX designer hiring process, skill assessment, and
@@ -151,6 +154,12 @@
             <div class="col">
                 <div class="card h-100 projects">
                     <img src="images/frostfigma.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
+
                     <div class="card-body">
                         <h5 class="card-title">Banking Where <i>You</i>-sers Matter</h5>
                         <p class="card-text">Redesigning the Frost Bank checking site to bridge the gap between
@@ -175,16 +184,17 @@
 
             <div class="col">
                 <div class="card h-100 projects">
-                    <!-- <div class="card-header">
-                        <i class="fa-solid fa-lock"> </i> Restricted
-                      </div> -->
-                    <img src="images/frostfigma.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bill Pay Archetypes</h5>
-                        <p class="card-text">Redesigning the Frost Bank checking site to bridge the gap between
-                            marketing and digital experiences.</p>
+                    <img src="https://placehold.co/600x200?text=\n" class="card-img-top">
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
                     </div>
 
+                    <div class="card-body">
+                        <h5 class="card-title">Bill Pay Archetypes</h5>
+                        <p class="card-text">Creating a shared language of our users helps propel BillGO's goal of true
+                            consumer obsession.</p>
+                    </div>
                     <div class="card-footer bg-transparent pb-3">
                         <span class="badge rounded-pill">
                             Research
@@ -194,18 +204,21 @@
             </div>
 
 
-             <!-------PROJECT 4 ----------->
+            <!-------PROJECT 4 ----------->
 
-             <div class="col">
+            <div class="col">
                 <div class="card h-100 projects">
-                    <!-- <div class="card-header">
-                        <i class="fa-solid fa-lock"> </i> Restricted
-                      </div> -->
-                    <img src="images/frostfigma.jpg" class="card-img-top" alt="...">
+
+                    <img src="https://placehold.co/600x200?text=\n" class="card-img-top">
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
+
                     <div class="card-body">
                         <h5 class="card-title">Living in Harmony</h5>
-                        <p class="card-text">Redesigning the Frost Bank checking site to bridge the gap between
-                            marketing and digital experiences.</p>
+                        <p class="card-text">Creating a cohesive design system, and a set of design principles, that
+                            aligned design and engineering at BillGO</p>
                     </div>
 
                     <div class="card-footer bg-transparent pb-3">
@@ -225,20 +238,23 @@
             <!-------PROJECT 5----------->
 
             <div class="col">
-                <div class="card h-100 projects">
-                    <img src="images/writing.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Writing on Design</h5>
-                        <p class="card-text">A collection of articles on the theory of graphic design and the practice.
-                        </p>
+                <a href="https://medium.com/@scaliatine" target="_blank">
+                    <div class="card h-100 projects ready">
+                        <img src="images/writing.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Writing on Design</h5>
+                            <p class="card-text">A collection of articles on the theory of graphic design and the
+                                practice.
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
 
             <!-------PROJECT 6 ----------->
 
-            <div class="col">
+            <!-- <div class="col">
                 <div class="card projects h-100">
                     <img src="/images/wearehouse1.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
@@ -247,7 +263,7 @@
 
                     
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -272,103 +288,15 @@
 
 
 
-    <!-- -------------OLD CODE--------------- -->
-
-
-
-    <div id="wrapper">
-
-        <!----------- HERO  ----------->
-
-
-        <!--------- PORTFOLIO ------------>
-
-        <div id="portfolio">
 
 
 
 
-
-
-            <div class="work">
-                <div class="workimage frostredesign"></div>
-
-                <div class="workcaption">
-                    <h2><a class="inactive" href="frostbankredesign.html">Frost Bank Website Redesign</a></h2>
-
-                    <p><a class="inactive" href="frostbankredesign.html">Redesigning Frostbank.com to create a cohesive
-                            web experience that reflects the Frost brand voice and tone of a relationship driven
-                            organization.</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a class="inactive" href="frostbankredesign.html">UX/UI</a></p>
-
-                    <p><a class="inactive" href="frostbankredesign.html">Design Thinking</a></p>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="workimage schertz"></div>
-
-                <div class="workcaption">
-                    <h2><a href="schertz.html">City of Schertz Tourism</a></h2>
-
-                    <p><a href="schertz.html">Redesigning the City of Schertz website to increase the number of visitors
-                            and entice new residents by being the go-to-guide for local culture and events</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a href="schertz.html">UX/UI</a></p>
-
-                    <p><a href="schertz.html">Conceptual Design</a></p>
-                </div>
-            </div>
-
-
-            <div class="work">
-                <div class="workimage reslife"></div>
-
-                <div class="workcaption">
-                    <h2><a href="reslife.html">Texas State Housing Department</a></h2>
-
-                    <p><a href="reslife.html">Redesigning the Texas State Housing Department website to increase
-                            findability, reduce effort to update and reflect strategic campaigns.</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a href="reslife.html">Information Architecture</a></p>
-
-                    <p><a href="reslife.html">UX/UI</a></p>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="workimage alumni"></div>
-
-                <div class="workcaption">
-                    <h2><a href="alumni.html">Texas State Alumni Association</a></h2>
-
-                    <p><a href="alumni.html">Create a strategic plan and brand campaign that helped raise over $40,000
-                            in funds for the Alumni Association Center</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a href="alumni.html">Brand Strategy</a></p>
-
-                    <p><a href="alumni.html">Marketing</a></p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <footer>
-        <div class="contactinfo">
-            <p>&copy; David Scaliatine, 2024 | <a href="mailto:scaliatine@gmail.com">Email Me</a></p>
-        </div>
+    <footer class="contactinfo">
+        <p>&copy; David Scaliatine, <span class="copyright">2021</span></p>
     </footer>
+
+
     <!---- JAVA SCRIPT ----->
     <!-- Place this script at the end of your body -->
     <script src="js/index.js"></script>

@@ -25,3 +25,4 @@ var experience = current - 2011;
 console.log(current);
 console.log(experience);
 $(".experience").html(experience);
+$(".copyright").html(current);

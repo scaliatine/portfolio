@@ -131,6 +131,13 @@ table {
 
 /* End of Meyer Reset CSS */
 
+ol, ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 img {
     max-width: 100%;
     /*makes images scale with flexible grids*/
@@ -171,6 +178,24 @@ html {
     border-top: none;
 }
 
+.card-img-overlay {
+    box-shadow: inset 100rem 100em rgba(0,0,0,.3);
+
+  }
+
+  .locked {
+    color: #fff;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .locked i {
+    line-height: 1 !important;
+  }
+
 .badge {
     background-color: #E5F6DF;
     color: #232426;
@@ -184,6 +209,12 @@ html {
     margin: 3rem auto 10rem auto;
     padding: .5rem;
 }
+
+
+.portfolio {
+    padding-bottom: 2rem;
+}
+
 
 /* ---------TEXT STYLES--------- */
 
@@ -262,7 +293,14 @@ h1 {
 }
 
 
+.ready:hover {
+    box-shadow: 0 0 13px rgba(0, 0, 0, .4);
+    transition: all .5s;
+}
 
+.thesis {
+    line-height: 175%;
+}
 
 
 
@@ -318,10 +356,7 @@ h1 {
 
 
 
-.projects:hover {
-    box-shadow: 0 0 13px rgba(0, 0, 0, .4);
-    transition: all .5s;
-}
+
 
 
 
