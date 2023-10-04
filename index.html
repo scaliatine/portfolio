@@ -4,26 +4,31 @@
 <head>
     <meta charset="us-ascii"><!--Don't forget to fill these out!-->
     <title>Scaliatine Design</title>
-    <meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
+    <meta name="description" content="Communication Design" />
+
+
+    <!---Bootstrap Style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!--Links to the main Style Sheet-->
     <link href="style.css" rel="stylesheet" type="text/css" />
     <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
     <script src="js/modernizr.js"></script>
-    
-    <!-- jQuery library (from jQuery Library) -->
-    <script
-    src="https://code.jquery.com/jquery-3.7.1.js"
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
 
-    <!-- bxSlider Javascript file -->
-    <script src="jquery.bxslider.min.js"></script>
-    
-    <!-- bxSlider CSS file -->
-    <link href="jquery.bxslider.css" rel="stylesheet" />
-    
+    <!-- jQuery library (from jQuery Library) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fe5b0c0133.js" crossorigin="anonymous"></script>
+
+
     <!--Makes the site so it won't scale down on small devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- Google Fonts Code -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
@@ -43,202 +48,261 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a>
-            </div>
-              
-        <!-- this is the link you click to get the menu to show up-->
 
-            <nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button"
-                        src="images/burger.png" /></a></nav>
-            <!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
-
-            <nav class="dropdown" id="mobilemenu">
-                <header>
-                    <nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img
-                                alt="navigation close" src="images/close.png" /></a></nav>
-                </header>
-
-                <ul>
-                    <li class="activelink"><a href="#">Home</a></li>
-                    <li><a href="index.html#portfolio">Work</a></li>
-                    <li><a href="resume.html">About Me</a></li>
-                </ul>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse topnav navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#work">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resume.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <!----------- END MOBILE NAVIGATION ----------->
-        </header>
-        <!----------- HERO  ----------->
-
-        <div class="hero">
-            <div class="intro">
-                <p>Hi, I&rsquo;m <span class="bold">David Scaliatine.</span> I&rsquo;m a User Experience designer with a propensity
-                    for <span class="simplehighlight highlight">service design thinking,</span> puns, typography,
-                    delivering <span class="simplehighlight highlight">holistic user-centered experiences</span> and
-                    building collaborative teams.</p>
-            </div>
         </div>
-        <!--------- PORTFOLIO ------------>
+    </header>
 
-        <div id="portfolio">
-            <div class="divider">
-                <h1>My Work</h1>
+
+    <div class="hero container">
+        <p>Hi, I&rsquo;m <span class="bold">David</span>. I&rsquo;m a User Experience leader with a propensity
+            for <span class=" highlight">service design thinking,</span> puns, typography,
+            delivering <span class=" highlight">holistic user-centered experiences</span> and
+            building collaborative teams.</p>
+    </div>
+
+
+    <!--------- PORTFOLIO Cards------------>
+    <div class="container portfolio" id="work">
+        <h1>My Projects</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-3 gy-5">
+
+
+            <!-------PROJECT 1 ----------->
+            <div class="col">
+                <a href="thesis.html">
+                    <div class="card h-100 projects ready">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*pwEIDRo1DrVoxigtUHb9cQ.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Queer Assembly</h5>
+                            <p class="card-text">How personal narratives, shared from the LGBTQ+ community, impact
+                                self-esteem and create empathy.</p>
+                        </div>
+                        <div class="card-footer bg-transparent pb-3">
+                            <span class="badge rounded-pill">
+                                User Research
+                            </span>
+                            <span class="badge rounded-pill">
+                                Thesis
+                            </span>
+                            <span class="badge rounded-pill">
+                                UI Design
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="work">
-                <div class="workimage thesis"></div>
+            <!-------PROJECT 2 ----------->
 
-                <div class="workcaption">
-                    <h2><a href="thesis.html">LGBTQ+ Storytelling</a></h2>
+            <div class="col">
+                <div class="card h-100 projects">
+                    <img src="images/FigmaFive.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
 
-                    <p><a href="thesis.html">Examing how personal narratives, shared from the LGBTQ+ community, impact
-                            self-esteem and how stories help create empathy. </a></p>
-                </div>
 
-                <div class="badge">
-                    <p><a href="thesis.html">Research</a></p>
+                    <div class="card-body">
+                        <h5 class="card-title">Skills to Pay the Bills</h5>
+                        <p class="card-text">Overhauling Frost Bank's UX designer hiring process, skill assessment, and
+                            career development matrix for employees.</p>
+                    </div>
 
-                    <p><a href="thesis.html">Thesis</a></p>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="workimage frostfigma"></div>
-
-                <div class="workcaption">
-                    <h2><a href="frostbankfigma.html">Frost Bank Figma</a></h2>
-
-                    <p><a href="frostbankfigma.html">Restructuring Frost Bank&#39;s main design software to increase
-                            employee effeciencies and reduce the risk of duplicative work. </a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a href="frostbankfigma.html">Information Architecture</a></p>
-
-                    <p><a href="frostbankfigma.html">Design Operations</a></p>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="workimage frostredesign"></div>
-
-                <div class="workcaption">
-                    <h2><a class="inactive" href="frostbankredesign.html">Frost Bank Website Redesign</a></h2>
-
-                    <p><a class="inactive" href="frostbankredesign.html">Redesigning Frostbank.com to create a cohesive
-                            web experience that reflects the Frost brand voice and tone of a relationship driven
-                            organization.</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a class="inactive" href="frostbankredesign.html">UX/UI</a></p>
-
-                    <p><a class="inactive" href="frostbankredesign.html">Design Thinking</a></p>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="workimage schertz"></div>
-
-                <div class="workcaption">
-                    <h2><a href="schertz.html">City of Schertz Tourism</a></h2>
-
-                    <p><a href="schertz.html">Redesigning the City of Schertz website to increase the number of visitors
-                            and entice new residents by being the go-to-guide for local culture and events</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a href="schertz.html">UX/UI</a></p>
-
-                    <p><a href="schertz.html">Conceptual Design</a></p>
-                </div>
-            </div>
-            <!--<a href="wino.html"><div class="work">
-            <div class="workimage wino"></div>
-            <div class="workcaption"><p>Wino Mobile App</p></div>
-           <div class="badge"><p>Interaction Design</p><p>Conceptual Design</p></div>
-            </div>
-        </a>--><!--<a href="hermes.html"><div class="work">
-            <div class="workimage hermes"></div>
-            <div class="workcaption"><p>Hermes Travel Website</p></div>
-            </div>
-        </a>--><!--<a href="coined.html"><div class="work">
-            <div class="workimage coined"></div>
-            <div class="workcaption"><p>Coined Video Game Blog</p></div>
-            </div>
-        </a>--><!--<a href="bauhaus.html"><div class="work">
-            <div class="workimage wear"></div>
-            <div class="workcaption"><p>We A.R.e Bauhaus</p></div>
-            <div class="badge"><p>Brand Strategy</p><p>Conceptual Design</p></div>
-            </div>
-        </a>--><!--<a href="gvec.html"><div class="work">
-            <div class="workimage gvec"></div>
-            <div class="workcaption"><p>Electric Cooperative</p></div>
-            <div class="badge"><p>UX/UI</p><p>Marketing Materials</p></div>
-            </div>
-        </a>-->
-
-            <div class="work">
-                <div class="workimage reslife"></div>
-
-                <div class="workcaption">
-                    <h2><a href="reslife.html">Texas State Housing Department</a></h2>
-
-                    <p><a href="reslife.html">Redesigning the Texas State Housing Department website to increase
-                            findability, reduce effort to update and reflect strategic campaigns.</a></p>
-                </div>
-
-                <div class="badge">
-                    <p><a href="reslife.html">Information Architecture</a></p>
-
-                    <p><a href="reslife.html">UX/UI</a></p>
+                    <div class="card-footer bg-transparent pb-3">
+                        <span class="badge rounded-pill">
+                            Design Operations
+                        </span>
+                        <span class="badge rounded-pill">
+                            Management
+                        </span>
+                        <span class="badge rounded-pill">
+                            UX Design
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="work">
-                <div class="workimage alumni"></div>
+            <!-------PROJECT 3 ----------->
 
-                <div class="workcaption">
-                    <h2><a href="alumni.html">Texas State Alumni Association</a></h2>
+            <div class="col">
+                <div class="card h-100 projects">
+                    <img src="images/frostfigma.jpg" class="card-img-top" alt="...">
 
-                    <p><a href="alumni.html">Create a strategic plan and brand campaign that helped raise over $40,000
-                            in funds for the Alumni Association Center</a></p>
-                </div>
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
 
-                <div class="badge">
-                    <p><a href="alumni.html">Brand Strategy</a></p>
+                    <div class="card-body">
+                        <h5 class="card-title">Banking Where <i>You</i>-sers Matter</h5>
+                        <p class="card-text">Redesigning the Frost Bank checking site to bridge the gap between
+                            marketing and digital experiences.</p>
+                    </div>
 
-                    <p><a href="alumni.html">Marketing</a></p>
+                    <div class="card-footer bg-transparent pb-3">
+                        <span class="badge rounded-pill">
+                            UX Design
+                        </span>
+                        <span class="badge rounded-pill">
+                            UI Design
+                        </span>
+                        <span class="badge rounded-pill">
+                            Brand Strategy
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="work">
-                <div class="workimage writings"></div>
+            <!-------PROJECT 4 ----------->
 
-                <div class="workcaption">
-                    <h2><a href="http://medium.com/@scaliatine/" target="_blank">Writings on Medium.com</a></h2>
+            <div class="col">
+                <div class="card h-100 projects">
+                    <img src="https://placehold.co/600x200?text=\n" class="card-img-top">
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Bill Pay Archetypes</h5>
+                        <p class="card-text">Creating a shared language of our users helps propel BillGO's goal of true
+                            consumer obsession.</p>
+                    </div>
+                    <div class="card-footer bg-transparent pb-3">
+                        <span class="badge rounded-pill">
+                            Research
+                        </span>
+                    </div>
                 </div>
             </div>
+
+
+            <!-------PROJECT 4 ----------->
+
+            <div class="col">
+                <div class="card h-100 projects">
+
+                    <img src="https://placehold.co/600x200?text=\n" class="card-img-top">
+                    <div class="card-img-overlay locked">
+                        <i class="fa-solid fa-lock fa-2xl" style="color: #ffffff;"></i>
+                        <p>Coming Soon</p>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Living in Harmony</h5>
+                        <p class="card-text">Creating a cohesive design system, and a set of design principles, that
+                            aligned design and engineering at BillGO</p>
+                    </div>
+
+                    <div class="card-footer bg-transparent pb-3">
+                        <span class="badge rounded-pill">
+                            UI Design
+                        </span>
+                        <span class="badge rounded-pill">
+                            Design Systems
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-------PROJECT 5----------->
+
+            <div class="col">
+                <a href="https://medium.com/@scaliatine" target="_blank">
+                    <div class="card h-100 projects ready">
+                        <img src="images/writing.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Writing on Design</h5>
+                            <p class="card-text">A collection of articles on the theory of graphic design and the
+                                practice.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-------PROJECT 6 ----------->
+
+            <!-- <div class="col">
+                <div class="card projects h-100">
+                    <img src="/images/wearehouse1.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Don't Click Me</h5>
+                    </div>
+
+                    
+                </div>
+            </div> -->
+
+
+
         </div>
     </div>
 
-    <footer>
-        <div class="contactinfo">
-            <p>&copy; David Scaliatine, 2022 | <a href="mailto:scaliatine@gmail.com">Email Me</a></p>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="contactinfo">
+        <p>&copy; David Scaliatine, <span class="copyright">2021</span></p>
     </footer>
-       <!---- JAVA SCRIPT ----->
+
+
+    <!---- JAVA SCRIPT ----->
     <!-- Place this script at the end of your body -->
     <script src="js/index.js"></script>
-    <script type="text/javascript">
-            function toggle_visibility(id) {
-               var e = document.getElementById(id);
-               if(e.style.display == 'block')
-                  e.style.display = 'none';
-               else
-                  e.style.display = 'block';
-            }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,128 +1,288 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><!--Don't forget to fill these out!-->
-	<title>Thesis</title>
-	<meta name="description" content="Communication Design" /><!--Links to the main Style Sheet-->
-	<link href="style.css" rel="stylesheet" type="text/css" /><!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers--><script src="js/modernizr.js"></script><!-- jQuery library (from jQuery Library) -->
-	<script src="https://code.jquery.com/jquery-3.7.1.js"
-		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<!-- bxSlider Javascript file --><script src="jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
-	<link href="jquery.bxslider.css" rel="stylesheet" /><!--Makes the site so it won't scale down on small devices --><meta name="viewport" content="width=device-width, initial-scale=1"/><!-- Google Fonts Code -->
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /><!-- Font Awesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-</head>
-<body>
-<div id="wrapper">
-<header>
-<div class="logo"><a href="index.html"><img alt="Cartoon Designer in a tie" src="images/logo.svg" /></a></div>
-<!----------- START MOBILE NAVIGATION ------- >        
-       <!-- this is the link you click to get the menu to show up-->
 
-<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="burger menue button" src="images/burger.png" /></a></nav>
-<!-- This is the hidden mennu. Note that it must be an ID and is the same as the onclick in the link above-->
+<head>
+    <meta charset="us-ascii"><!--Don't forget to fill these out!-->
+    <title>Scaliatine Design</title>
+    <meta name="description" content="Communication Design" />
 
-<nav class="dropdown" id="mobilemenu">
-<header>
-<nav class="burger"><a href="#" onclick="toggle_visibility('mobilemenu');"><img alt="navigation close" src="images/close.png" /></a></nav>
-</header>
 
-<ul>
-	<li><a href="index.html">Home</a></li>
-	<li class="activelink"><a href="index.html#portfolio">Work</a></li>
-	<li><a href="resume.html">About Me</a></li>
-</ul>
-</nav>
-<!----------- END MOBILE NAVIGATION -----------></header>
+    <!---Bootstrap Style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<div class="clear"></div>
-<!----------- HERO  ----------->
 
-<div class="hero">
-<div id="puns"><img src="https://miro.medium.com/max/1400/1*pwEIDRo1DrVoxigtUHb9cQ.jpeg" /></div>
-</div>
-<!--------- PORTFOLIO ------------>
+    <!--Links to the main Style Sheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+    <script src="js/modernizr.js"></script>
 
-<section class="project" id="individual">
-<div class="title">
-<h2>Neglected Narratives:<br />
-Creating a Digital Platform for LGBTQIA+ Stories and Evaluating Impact on Self-Esteem</h2>
+    <!-- jQuery library (from jQuery Library) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-<h4>David Scaliatine</h4>
-</div>
 
-<article class="description">
-<h3>The Context</h3>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fe5b0c0133.js" crossorigin="anonymous"></script>
 
-<p>Stories, and specifically as a focus in this thesis, personal narratives, can be so much more than just words shared on a page, bound in books, collecting dust on library shelves. They are vivid memories, lost voices, and epic journeys. A well-timed story can create a movement, quell a storm and spark a revolution. They connect our experiences and become our legacy. When we listen to a story, we build a connection with the storyteller. As their narrative unfolds, a shared understanding is built through learning and establishing our self-conscience to relate to one another. Keen (207) describes this as narrative empathy, which is a pivotal step in understanding someone else&rsquo;s point-of-view, struggles, and perseverance. When we listen to a poignant story and share it with others, we allow it to be strengthened in our memories and <span class="highlight simplehighlight">eventually shift our ideals, beliefs, and interactions.</span></p>
 
-<p>Furthermore, listening to stories from or of people who mirror yourself, experiences and environment can impact your ideals. This can shift who you want to be and how you want to be perceived by others, resulting in an impact on self-esteem (&ldquo;Erik Erikson: The Search for Self-Identity.&rdquo;). Our reaction to stories is more than psychological; it is physiological as well. Research shows that <span class="highlight simplehighlight">the more the listener of a story connects and understands the story from the storyteller&rsquo;s perspective, the more likely the listener&rsquo;s brain waves would mirror the person telling the story</span> (Stephens et al.). If stories impact our beliefs and how we relate and connect with others, we must ensure there is a representation of a range of people and experiences.</p>
+    <!--Makes the site so it won't scale down on small devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<p>In mainstream narratives, underserved communities, such as those who identify as queer or LGBTQIA+, can often be regulated to simplified depictions of either negative, non-affirming ways or typical tropes and stereotypes. This absence of fully realized and true representation is often referred to as relative invisibility, <span class="highlight simplehighlight">in which there may not be a lack of representation in general, there is however, an absence of abundant positive representations</span> (Fryberg and Townsend). In a 2011 study of GLB individuals regarding how media influenced self-realization, respondents frequently requested a desire to see realistic depictions of queer individuals (Gomillion and Giuliano). Arguably realistic is a word that could be interpreted many different ways, yet more often than not these narratives focus on coming out, familial struggles, or the lense of the flamboyant gay friend. While the former of the contexts can be relevant to the queer experience, it is not the only aspect. It fails to showcase an individual as a whole, missing out on building empathy through intersectionality.</p>
+    <!-- Google Fonts Code -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!--GOOGLE ANALYTICS-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36669572-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<p>Eventually, it results in an incomplete embodiment of the individual and increased difficulty in building narrative empathy. When this happens, it could suggest that <span class="highlight simplehighlight">queer individuals can be perceived with stigmatization, discrimination, or marginalization from non-queer populations, causing queer storytellers to have a lower perceived value and lower self-esteem</span>. Even from a young age, LGBTQIA+ individuals experience more significant mental health issues than their straight counterparts.</p>
-
-<p>Additionally, in examining longitudinal studies, it has been shown that LGBTQIA+ individuals have lower self-esteem levels (Bridge et al.). And while many different elements factor into these issues, such as familial struggles, religious persecution, discrimination, self-realization, amongst others, it can be extrapolated that overall the cause of low self-esteem is shared experiences unique to this underrepresented group, compared to their straight counterparts. Additionally, trends in lower self-esteem and higher rates of mental health issues, in general, continue to trend significantly higher than other heterosexual groups. This examination provides the preliminary context that underrepresentation of queer stories can be one of the many factors to lower self-esteem and an association with problematic mental wellness.</p>
-<img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" /></article>
-
-<article class="description">
-<h3>The Problem</h3>
-
-<p>Let us take a moment to consider how storytelling permeates into a digital landscape for queer individuals. Given that digital spaces allow for widespread aggregation and reach larger audiences, there is no lack of availability of LGBTQIA+ friendly websites and apps. However, with exceptions, the primary purpose of the majority is casual hooking up or finding a long-term romantic relationship, creating a representation gap in queer storytelling platforms. This becomes problematic as there aren&rsquo;t enough social connection platforms for queer individuals under 25 years old, who often use digital means to seek a social connection and support of others (Baams et al.).</p>
-
-<p>Lex: Queer Lovers and Friends, one popular app, is self-described as a social app that connects queer lovers and friends. However, categorically within the app store, it is listed as a dating app. The marketing language explicitly states their driving purpose is to find a steamy date beyond a profile picture. By not having a clear focus on either dating or social, their conflating intent muddies the app&rsquo;s purpose. Another app, Amino, one of the few created for social connection, features multiple channels or groups to join with a large selection of LGBTQIA+ options. However, their non-curated format creates a space mixed with memes, recycled Tumblr posts, and its interface design is hard to navigate. Other websites focused explicitly on storytelling, like StoryCorps, highlight crafted and structured personal narratives. However, in StoryCorps, only 4% of their 60,000 professional recorded stories focus on the experience or specifically identify LGBTQIA+ individuals.</p>
-
-<p>To say all LGBTQIA+ focused and friendly sites fall into a few categories such as dating, casual hookups, or news and gossip&mdash;would be incorrect, as this is a cursory categorization at sites and apps available. It would also be remiss not to acknowledge both digital and physical mediums explicitly created for and by the queer community. Digital collections such as the LGBTQ Digital Collaboratory, which is updated regularly, features over 40 different websites focused on oral histories. While the large majority of initiatives are working sites, many tied to higher education institutions, the aggregate list contains broken or missing links. There are plenty of active sites in the previous example and more, this thesis plans to expand on the foundation set be such sites.</p>
-
-<p>Physical publications like newspapers, magazines, and zines have filled the gaps of underrepresented voices for years. Often started in grassroots and underground settings, these periodicals featuring LGBTQIA+ news and narratives continue to impact readers today. These physical pieces usually come with a limitation of reach and accessibility, requiring a subscription and lacking the anonymity of digital spaces. Unfortunately,<span class="highlight simplehighlight"> there are few digital spaces dedicated to LGBTQIA+ individuals outside of dating, hookups, celebrity, and entertainment.</span> Without ubiquitous platforms dedicated to destigmatizing queer stories and building empathy between and within the underserved communities, LGBTQIA+ individuals will continue to see greater rates of low self-esteem and mental health issues.</p>
-<img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" /></article>
-
-<article class="description">
-<h3>Hypothesis</h3>
-
-<p>This thesis seeks to examine how a digital platform can portray, amplify, and <span class="highlight simplehighlight">represent queer stories through an interactive digital story collection to build a stronger narrative empathy between storytellers and listeners.</span> Stronger narrative empathy and emotional bonds have been seen to have a significant impact on increased self-esteem and suggested that a digital storytelling platform targeted towards the queer community will have the same positive effects (Hahm et al.).</p>
-
-<p>In the context of this study, a queer story is any personal story shared by an LGBTQIA+ person, in which their experience has had a significant impact. Including, but not exclusive to, coming out, transitioning, LGBTQIA+ legislation, pride, insurance, families, relationships, health, and wellness, etc. This thesis focuses on capturing these <span class="highlight simplehighlight">realistic portrayals of moments impacted by their queer experiences and showcasing them on a digital platform</span>.</p>
-<img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" /></article>
-
-<article class="description">
-<h3>Methodology and Outcome</h3>
-
-<p>To collect stories that examine viewpoints beyond generalized queer tropes, such as the flamboyant gay or the troubled queer, and to increase the normalization of stories from an intersection of people, there will be a series of unstructured interviews with self-consenting subjects identified through a survey. After the project is available publicly, individuals&rsquo; self-esteem will be measured using the Rosenberg Self-Esteem Scale (VII. Appendix) to determine the effect of storytelling and listening to a personal story on self-esteem.</p>
-
-<p>An outcome of this thesis will be a measurable impact on storytellers&rsquo; and listeners&rsquo; empathy and self-esteem. While measuring the impact on an individual&#39;s self-esteem will be one measure, it is not the primary objective of this thesis. Instead, the <span class="highlight simplehighlight">main outcome will be an interactive story collection on a digital platform that allows LGBTQIA+ individuals to share a part of their experience with others</span>. This digital story collection will create a new affirming space solely focused on amplifying underserved voices and encouraging others to do the same.</p>
-<img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" /></article>
-</section>
-</div>
-
-<footer>
-<div class="contactinfo">
-<p>&copy; David Scaliatine, 2021 | <a href="mailto:scaliatine@gmail.com">Email Me</a>&nbsp;</p>
-</div>
-<!--<nav class="desktoponly">
-            <ul class="footernav">
-                <a href="schertz.html"><li >Schertz</li></a>
-                <a href="wino.html"><li>Wino</li></a>
-                <a href="hermes.html"><li>Hermes</li></a>
-                <a href="coined.html"><li>Coined</li></a>
-                <a href="bauhaus.html"><li>Bauhaus</li></a>
-                <a href="gvec.html"><li>GVEC</li></a>
-                <a href="reslife.html" ><li>Reslife</li></a>
-                <a href="alumni.html"><li>Alumni</li></a>
-            </ul>
-        </nav>--></footer>
-   <!---- JAVA SCRIPT ----->
-    <!-- Place this script at the end of your body -->
-    <script src="js/index.js"></script>
-    <script type="text/javascript">
-            function toggle_visibility(id) {
-               var e = document.getElementById(id);
-               if(e.style.display == 'block')
-                  e.style.display = 'none';
-               else
-                  e.style.display = 'block';
-            }
+        gtag('config', 'UA-36669572-1');
     </script>
 
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse topnav navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#work">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resume.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!----------- HERO  ----------->
+
+    <div class="container">
+        <img src="https://miro.medium.com/max/1400/1*pwEIDRo1DrVoxigtUHb9cQ.jpeg" />
+        <h1>Queer Assembly: Creating a Digital Platform for LGBTQIA+ Stories and Evaluating Impact on Self-esteem</h1>
+    </div>
+    <!--------- PORTFOLIO ------------>
+    <div class="container thesis">
+        <a href="https://digital.library.txst.edu/items/92d6470b-9bbf-4a02-9da2-f0e50b4d1759">Read the full thesis</a>
+        <div class="row">
+            <h3 class="col-12 mb-1 mt-5">The Context</h3>
+            <div class="col-12 mb-2 mt-1">
+                <p>Stories, and specifically as a focus in this thesis, personal narratives, can be so much more than
+                    just
+                    words shared on a page, bound in books, collecting dust on library shelves. They are vivid memories,
+                    lost voices, and epic journeys. A well-timed story can create a movement, quell a storm and spark a
+                    revolution. They connect our experiences and become our legacy. When we listen to a story, we build
+                    a
+                    connection with the storyteller. As their narrative unfolds, a shared understanding is built through
+                    learning and establishing our self-conscience to relate to one another. Keen (207) describes this as
+                    narrative empathy, which is a pivotal step in understanding someone else&rsquo;s point-of-view,
+                    struggles, and perseverance. When we listen to a poignant story and share it with others, we allow
+                    it to
+                    be strengthened in our memories and <span class="highlight">eventually shift our ideals, beliefs,
+                        and
+                        interactions.</span></p>
+
+
+                <p>Furthermore, listening to stories from or of people who mirror yourself, experiences and environment
+                    can
+                    impact your ideals. This can shift who you want to be and how you want to be perceived by others,
+                    resulting in an impact on self-esteem (&ldquo;Erik Erikson: The Search for Self-Identity.&rdquo;).
+                    Our
+                    reaction to stories is more than psychological; it is physiological as well. Research shows that
+                    <span class="highlight simplehighlight">the more the listener of a story connects and understands
+                        the
+                        story from the storyteller&rsquo;s perspective, the more likely the listener&rsquo;s brain waves
+                        would mirror the person telling the story</span> (Stephens et al.). If stories impact our
+                    beliefs
+                    and how we relate and connect with others, we must ensure there is a representation of a range of
+                    people
+                    and experiences.
+                </p>
+
+                <p>In mainstream narratives, underserved communities, such as those who identify as queer or LGBTQIA+,
+                    can
+                    often be regulated to simplified depictions of either negative, non-affirming ways or typical tropes
+                    and
+                    stereotypes. This absence of fully realized and true representation is often referred to as relative
+                    invisibility, <span class="highlight simplehighlight">in which there may not be a lack of
+                        representation
+                        in general, there is however, an absence of abundant positive representations</span> (Fryberg
+                    and
+                    Townsend). In a 2011 study of GLB individuals regarding how media influenced self-realization,
+                    respondents frequently requested a desire to see realistic depictions of queer individuals
+                    (Gomillion
+                    and Giuliano). Arguably realistic is a word that could be interpreted many different ways, yet more
+                    often than not these narratives focus on coming out, familial struggles, or the lense of the
+                    flamboyant
+                    gay friend. While the former of the contexts can be relevant to the queer experience, it is not the
+                    only
+                    aspect. It fails to showcase an individual as a whole, missing out on building empathy through
+                    intersectionality.</p>
+
+                <p>Eventually, it results in an incomplete embodiment of the individual and increased difficulty in
+                    building
+                    narrative empathy. When this happens, it could suggest that <span
+                        class="highlight simplehighlight">queer individuals can be perceived with stigmatization,
+                        discrimination, or marginalization from non-queer populations, causing queer storytellers to
+                        have a
+                        lower perceived value and lower self-esteem</span>. Even from a young age, LGBTQIA+ individuals
+                    experience more significant mental health issues than their straight counterparts.</p>
+
+                <p>Additionally, in examining longitudinal studies, it has been shown that LGBTQIA+ individuals have
+                    lower
+                    self-esteem levels (Bridge et al.). And while many different elements factor into these issues, such
+                    as
+                    familial struggles, religious persecution, discrimination, self-realization, amongst others, it can
+                    be
+                    extrapolated that overall the cause of low self-esteem is shared experiences unique to this
+                    underrepresented group, compared to their straight counterparts. Additionally, trends in lower
+                    self-esteem and higher rates of mental health issues, in general, continue to trend significantly
+                    higher
+                    than other heterosexual groups. This examination provides the preliminary context that
+                    underrepresentation of queer stories can be one of the many factors to lower self-esteem and an
+                    association with problematic mental wellness.</p>
+                <img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" />
+
+
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="col-12 mb-1 mt-5">The Problem</h3>
+            <div class="col-12 mb-2 mt-1">
+                <p>Let us take a moment to consider how storytelling permeates into a digital landscape for queer
+                    individuals. Given that digital spaces allow for widespread aggregation and reach larger audiences,
+                    there is no lack of availability of LGBTQIA+ friendly websites and apps. However, with exceptions,
+                    the
+                    primary purpose of the majority is casual hooking up or finding a long-term romantic relationship,
+                    creating a representation gap in queer storytelling platforms. This becomes problematic as there
+                    aren&rsquo;t enough social connection platforms for queer individuals under 25 years old, who often
+                    use
+                    digital means to seek a social connection and support of others (Baams et al.).</p>
+
+                <p>Lex: Queer Lovers and Friends, one popular app, is self-described as a social app that connects queer
+                    lovers and friends. However, categorically within the app store, it is listed as a dating app. The
+                    marketing language explicitly states their driving purpose is to find a steamy date beyond a profile
+                    picture. By not having a clear focus on either dating or social, their conflating intent muddies the
+                    app&rsquo;s purpose. Another app, Amino, one of the few created for social connection, features
+                    multiple
+                    channels or groups to join with a large selection of LGBTQIA+ options. However, their non-curated
+                    format
+                    creates a space mixed with memes, recycled Tumblr posts, and its interface design is hard to
+                    navigate.
+                    Other websites focused explicitly on storytelling, like StoryCorps, highlight crafted and structured
+                    personal narratives. However, in StoryCorps, only 4% of their 60,000 professional recorded stories
+                    focus
+                    on the experience or specifically identify LGBTQIA+ individuals.</p>
+
+                <p>To say all LGBTQIA+ focused and friendly sites fall into a few categories such as dating, casual
+                    hookups,
+                    or news and gossip&mdash;would be incorrect, as this is a cursory categorization at sites and apps
+                    available. It would also be remiss not to acknowledge both digital and physical mediums explicitly
+                    created for and by the queer community. Digital collections such as the LGBTQ Digital Collaboratory,
+                    which is updated regularly, features over 40 different websites focused on oral histories. While the
+                    large majority of initiatives are working sites, many tied to higher education institutions, the
+                    aggregate list contains broken or missing links. There are plenty of active sites in the previous
+                    example and more, this thesis plans to expand on the foundation set be such sites.</p>
+
+                <p>Physical publications like newspapers, magazines, and zines have filled the gaps of underrepresented
+                    voices for years. Often started in grassroots and underground settings, these periodicals featuring
+                    LGBTQIA+ news and narratives continue to impact readers today. These physical pieces usually come
+                    with a
+                    limitation of reach and accessibility, requiring a subscription and lacking the anonymity of digital
+                    spaces. Unfortunately,<span class="highlight "> there are few digital spaces dedicated to
+                        LGBTQIA+ individuals outside of dating, hookups, celebrity, and entertainment.</span> Without
+                    ubiquitous platforms dedicated to destigmatizing queer stories and building empathy between and
+                    within
+                    the underserved communities, LGBTQIA+ individuals will continue to see greater rates of low
+                    self-esteem
+                    and mental health issues.</p>
+                <img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" />
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="col-12 mb-1 mt-5">The Hypothesis</h3>
+            <div class="col-12 mb-2 mt-1">
+                <p>This thesis seeks to examine how a digital platform can portray, amplify, and <span
+                    class="highlight ">represent queer stories through an interactive digital story
+                    collection to build a stronger narrative empathy between storytellers and listeners.</span> Stronger
+                narrative empathy and emotional bonds have been seen to have a significant impact on increased
+                self-esteem and suggested that a digital storytelling platform targeted towards the queer community will
+                have the same positive effects (Hahm et al.).</p>
+
+            <p>In the context of this study, a queer story is any personal story shared by an LGBTQIA+ person, in which
+                their experience has had a significant impact. Including, but not exclusive to, coming out,
+                transitioning, LGBTQIA+ legislation, pride, insurance, families, relationships, health, and wellness,
+                etc. This thesis focuses on capturing these <span class="highlight ">realistic portrayals
+                    of moments impacted by their queer experiences and showcasing them on a digital platform</span>.</p>
+            <img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" />
+            </div>
+        </div>
+
+        <div class="row">
+            <h3 class="col-12 mb-1 mt-5">Methodology and Outcome</h3>
+            <div class="col-12 mb-2 mt-1">
+                <p>To collect stories that examine viewpoints beyond generalized queer tropes, such as the flamboyant gay or
+                    the troubled queer, and to increase the normalization of stories from an intersection of people, there
+                    will be a series of unstructured interviews with self-consenting subjects identified through a survey.
+                    After the project is available publicly, individuals&rsquo; self-esteem will be measured using the
+                    Rosenberg Self-Esteem Scale (VII. Appendix) to determine the effect of storytelling and listening to a
+                    personal story on self-esteem.</p>
+    
+                <p>An outcome of this thesis will be a measurable impact on storytellers&rsquo; and listeners&rsquo; empathy
+                    and self-esteem. While measuring the impact on an individual&#39;s self-esteem will be one measure, it
+                    is not the primary objective of this thesis. Instead, the <span class="highlight ">main
+                        outcome will be an interactive story collection on a digital platform that allows LGBTQIA+
+                        individuals to share a part of their experience with others</span>. This digital story collection
+                    will create a new affirming space solely focused on amplifying underserved voices and encouraging others
+                    to do the same.</p>
+                <img src="https://miro.medium.com/max/1180/1*M1aJCGStvT6N0cY80Kegfw.png" />
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    </div>
+
+    <footer class="contactinfo">
+        <p>&copy; David Scaliatine, <span class="copyright">2021</span></p>
+    </footer>
+
+
+    <!---- JAVA SCRIPT ----->
+    <!-- Place this script at the end of your body -->
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
